@@ -1,10 +1,10 @@
 # 开发时间： 2022/3/28 $ 16:18
 from flask import jsonify, request
+from app.forms.book import SearchForm
 
 from app.libs.Helper import is_isbn_or_key
 from app.spider.yushu_book import YuShuBook
 from . import web
-from ..forms.book import SearchForm
 
 
 @web.route('/book/search')
